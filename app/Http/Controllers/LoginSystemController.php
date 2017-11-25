@@ -12,12 +12,6 @@ class LoginSystemController extends Controller
         return view('project1.index');
     }
 
-    public function accounts()
-    {
-    	$accounts=entry::all();
-    	return view('project1.accounts',compact('accounts'));
-    }
-
     public function register()
     {
         return view('project1.register');

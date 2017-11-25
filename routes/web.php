@@ -26,6 +26,5 @@ Route::get('/contact','PagesController@contact');
 Route::get('/project1','LoginSystemController@project1');
 Route::get('/register','LoginSystemController@register');
 Route::post('/project1','LoginSystemController@store');
-Route::get('/accounts','LoginSystemController@accounts');
 Route::post('/userInfo','LoginSystemController@show');
 
