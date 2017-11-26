@@ -1,5 +1,8 @@
 @extends('app')
 
+@section('header')
+	<h2>User Information</h2>
+@stop
 @section('content')
 
 <article>

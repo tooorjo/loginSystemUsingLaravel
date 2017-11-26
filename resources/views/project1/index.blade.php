@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>login page</title>
-</head>
-<body>
+@extends('app')
+
+@section('pagename')
+Login page
+@stop
+
+@section('header')
 <h4>Enter your username and password to login.</h4>
+@stop
+
 <!--
 <form method="post" action="/userInfo">
 Username:
@@ -16,6 +19,7 @@ Username:
 <input type="submit" value="submit">
 </form>
 -->
+@section('content')
 {!! Form::open(['url'=>'/userInfo']) !!}
 
 	{!! Form::label('username','Username:') !!}
@@ -27,8 +31,9 @@ Username:
 	{!! Form::submit('Log In') !!}
 
 {!! Form::close() !!}
+@stop
 
+@section('footer')
 <br><br>
 <h4>Do not have an account?? <a href='register'>register</a> then, it's FREE!!!!
-</body>
-</html>
+@stop

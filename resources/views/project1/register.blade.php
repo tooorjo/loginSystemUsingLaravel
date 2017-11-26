@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Registration page</title>
-</head>
-<body>
+@extends('app')
+
+@section('pagename')
+Registration page
+@stop
+
+@section('header')
 <h4>Please fill up the given form:</h4>
+@stop
 <!--
 <form method="post"  action="/project1">
 Username:
@@ -18,6 +20,7 @@ Username:
 <input type="submit" value="submit">
 </form>
 -->
+@section('content')
 {!! Form::open(['url'=>'/project1']) !!}
 
 	{!! Form::label('username','Username:') !!}
@@ -32,8 +35,9 @@ Username:
 	{!! Form::submit('Register') !!}
 
 {!! Form::close() !!}
+@stop
 
+@section('footer')
 <br><br>
 <h4>Already have an account?? <a href='project1'>login</a> here.
-</body>
-</html>
+@stop
